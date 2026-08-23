@@ -92,3 +92,43 @@ font-size:11px;font-weight:900;z-index:120;transition:.2s}.toast.show{opacity:1;
 .driver-team{color:var(--yellow)!important;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
 .driver-info blockquote{margin:22px 0 0;padding:14px 0 14px 16px;border-left:3px solid var(--yellow);color:#fff;font:italic 700 16px/1.5 Arial,sans-serif}
 @media(max-width:700px){.featured-driver{grid-column:auto;grid-template-columns:1fr}.driver-photo{height:340px}}
+
+/* Compact driver card */
+.featured-driver{
+  grid-column:auto;
+  grid-template-columns:96px 1fr;
+  min-height:145px;
+  max-width:520px;
+  align-items:stretch;
+}
+.driver-photo{
+  width:96px;
+  height:145px;
+  min-height:0;
+  object-fit:cover;
+  object-position:center top;
+}
+.driver-info{padding:16px 18px}
+.driver-info .driver-number{font-size:34px}
+.driver-info h3{font-size:20px;margin:5px 0 2px}
+.driver-role{margin-top:3px}
+.driver-team{margin:5px 0!important}
+.driver-info p{margin:4px 0}
+.driver-info blockquote{
+  margin:10px 0 0;
+  padding:7px 0 7px 10px;
+  font-size:13px;
+}
+@media(max-width:700px){
+  .featured-driver{
+    grid-template-columns:82px 1fr;
+    max-width:none;
+    min-height:132px;
+  }
+  .driver-photo{
+    width:82px;
+    height:132px;
+    min-height:0;
+  }
+  .driver-info{padding:13px}
+}
