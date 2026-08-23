@@ -84,3 +84,11 @@ footer strong{color:#fff;font:900 18px Impact,Arial;text-transform:uppercase}foo
 font-size:11px;font-weight:900;z-index:120;transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}
 @media(max-width:950px){.hero-grid,.race-grid,.join-grid{grid-template-columns:1fr}.hero-grid{padding-bottom:100px}.values{grid-template-columns:1fr 1fr}.specs{grid-template-columns:1fr 1fr}.section-head{align-items:start;flex-direction:column}.driver-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:700px){nav{display:none;position:absolute;left:14px;right:14px;top:72px;background:#081019;border:1px solid #263746;padding:10px}nav.open{display:flex;flex-direction:column}.menu{display:block}.hero-grid{min-height:auto;padding-top:48px}.telemetry{position:relative;left:auto;bottom:auto;margin-top:10px;width:100%}.values,.schedule-grid,.specs,.incidents,.driver-grid,.results-grid{grid-template-columns:1fr}.round{grid-template-columns:62px 1fr}.rname{grid-column:2;text-align:left;padding:0 10px 14px 0}.format-grid{grid-template-columns:1fr}.fi{border-right:0}footer .wrap{flex-direction:column;align-items:flex-start}}
+
+.featured-driver{padding:0;overflow:hidden;display:grid;grid-template-columns:180px 1fr;min-height:250px;grid-column:span 2}
+.driver-photo{width:100%;height:100%;min-height:250px;object-fit:cover;object-position:center}
+.driver-info{padding:24px;position:relative}
+.driver-role{display:inline-block;margin-top:8px;color:var(--blue);font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.14em}
+.driver-team{color:var(--yellow)!important;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+.driver-info blockquote{margin:22px 0 0;padding:14px 0 14px 16px;border-left:3px solid var(--yellow);color:#fff;font:italic 700 16px/1.5 Arial,sans-serif}
+@media(max-width:700px){.featured-driver{grid-column:auto;grid-template-columns:1fr}.driver-photo{height:340px}}
