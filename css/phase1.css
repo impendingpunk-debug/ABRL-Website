@@ -1,0 +1,60 @@
+/* ABRL Phase 1 homepage redesign */
+:root{--p1-ink:#07090c;--p1-panel:#0d1117;--p1-paper:#eee9df;--p1-yellow:#f2c400;--p1-blue:#178bd6;--p1-muted:#a9b0b8;--p1-line:#262c34}
+body.home-phase1{background:#07090c;color:var(--p1-paper)}
+.home-phase1:before{opacity:.025}
+.home-phase1 header{background:rgba(7,9,12,.93);border-bottom:1px solid rgba(255,255,255,.09)}
+.home-phase1 .brandmark{background:var(--p1-paper);color:#090b0e;clip-path:polygon(0 0,100% 0,86% 100%,0 100%)}
+.home-phase1 .brand strong{color:var(--p1-paper)}
+.home-phase1 nav a:hover,.home-phase1 nav a.active{color:var(--p1-yellow);border-bottom-color:var(--p1-yellow)}
+
+.p1-hero{position:relative;min-height:720px;display:grid;align-items:end;overflow:hidden;border-bottom:1px solid var(--p1-line);background:#080a0e}
+.p1-hero-bg{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,7,10,.98) 0%,rgba(5,7,10,.82) 42%,rgba(5,7,10,.24) 72%,rgba(5,7,10,.48) 100%),linear-gradient(0deg,rgba(5,7,10,.95) 0%,transparent 45%),url('../assets/abrl-flyer.jpg') center 32%/cover no-repeat;filter:saturate(.75) contrast(1.08)}
+.p1-hero:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 0 67%,rgba(242,196,0,.08) 67% 68%,transparent 68%)}
+.p1-hero-inner{position:relative;z-index:2;padding:92px 0 68px;display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:54px;align-items:end}
+.p1-eyebrow{display:flex;align-items:center;gap:10px;color:var(--p1-yellow);font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.22em}
+.p1-eyebrow:before{content:"";width:44px;height:3px;background:var(--p1-yellow)}
+.p1-title{margin:16px 0 12px;font:900 clamp(78px,12vw,168px)/.76 Impact,Arial,sans-serif;letter-spacing:-.035em;text-transform:uppercase;color:var(--p1-paper);text-shadow:0 8px 28px #000}
+.p1-title small{display:block;margin-top:22px;font:700 clamp(13px,1.35vw,19px)/1.2 Arial,sans-serif;letter-spacing:.38em;color:#d7d3ca}
+.p1-lead{max-width:700px;margin:26px 0 0;color:#c1c5ca;font-size:16px;line-height:1.75}
+.p1-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.p1-btn{display:inline-flex;min-height:52px;align-items:center;justify-content:center;padding:0 20px;border:1px solid #404750;background:rgba(12,16,21,.88);font-size:11px;font-weight:900;letter-spacing:.11em;text-transform:uppercase;transition:.18s}
+.p1-btn:hover{transform:translateY(-2px);border-color:var(--p1-paper)}
+.p1-btn.primary{background:var(--p1-yellow);border-color:var(--p1-yellow);color:#090b0e}
+
+.p1-next{background:rgba(8,11,15,.93);border:1px solid #343a42;border-top:5px solid var(--p1-yellow);box-shadow:0 22px 70px #0008}
+.p1-next-head{padding:16px 18px;border-bottom:1px solid #262c33;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.p1-next-head span{font-size:10px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--p1-muted)}
+.p1-next-head b{font-size:10px;color:var(--p1-yellow);text-transform:uppercase;letter-spacing:.12em}
+.p1-next-body{padding:24px 20px}
+.p1-next h2{margin:0;font:900 38px/.9 Impact,Arial;text-transform:uppercase;color:var(--p1-paper)}
+.p1-next .series{margin-top:8px;color:var(--p1-blue);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.13em}
+.p1-race-meta{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin:22px 0;background:#252b32;border:1px solid #252b32}
+.p1-race-meta div{background:#10151b;padding:14px}.p1-race-meta small{display:block;color:#777f88;font-size:9px;text-transform:uppercase;letter-spacing:.12em}.p1-race-meta strong{display:block;margin-top:5px;font-size:13px;text-transform:uppercase}
+.p1-season-note{padding:14px 18px;background:#0b1015;border-top:1px solid #262c33;color:#b7bdc4;font-size:11px;line-height:1.5}.p1-season-note b{color:var(--p1-yellow)}
+
+.p1-stripe{background:var(--p1-paper);color:#090b0e;border-bottom:7px solid var(--p1-yellow)}
+.p1-stripe .wrap{min-height:58px;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:900;text-transform:uppercase;letter-spacing:.14em;font-size:11px}
+
+.p1-section{padding:84px 0;border-bottom:1px solid var(--p1-line)}
+.p1-section-head{display:grid;grid-template-columns:.7fr 1.3fr;gap:42px;align-items:end;margin-bottom:34px}
+.p1-kicker{display:block;color:var(--p1-yellow);font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.19em}
+.p1-section h2{margin:8px 0 0;font:900 clamp(46px,6vw,78px)/.9 Impact,Arial;text-transform:uppercase;color:var(--p1-paper)}
+.p1-section-head p{margin:0;max-width:720px;color:#aeb5bd;line-height:1.75}
+.p1-principles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.p1-principle{min-height:220px;padding:26px;background:linear-gradient(145deg,#11161c,#0b0f14);border:1px solid #292f37;position:relative;overflow:hidden}
+.p1-principle:after{content:attr(data-n);position:absolute;right:-2px;bottom:-20px;font:900 100px/1 Impact,Arial;color:rgba(255,255,255,.035)}
+.p1-principle h3{margin:54px 0 10px;font:900 24px Impact,Arial;text-transform:uppercase}.p1-principle p{margin:0;color:#9fa7b0;font-size:13px;line-height:1.65}.p1-principle .dash{width:42px;height:4px;background:var(--p1-blue)}.p1-principle:nth-child(2) .dash{background:var(--p1-yellow)}
+
+.p1-season-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}
+.p1-season-card,.p1-status-card{background:#0d1218;border:1px solid #29313a;padding:28px}
+.p1-season-card{border-left:5px solid var(--p1-blue)}
+.p1-season-card .label,.p1-status-card .label{font-size:9px;text-transform:uppercase;letter-spacing:.17em;color:#78818b;font-weight:900}.p1-season-card h3{margin:10px 0 5px;font:900 34px Impact,Arial;text-transform:uppercase}.p1-season-card p{color:#aeb5bd;line-height:1.65}.p1-season-facts{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.p1-season-facts span{border:1px solid #303842;background:#10161c;padding:10px 12px;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.09em}
+.p1-status-card{display:flex;flex-direction:column;justify-content:space-between}.p1-status-card strong{display:block;margin-top:10px;font:900 42px Impact,Arial;text-transform:uppercase;color:var(--p1-yellow)}.p1-status-card p{color:#aeb5bd;line-height:1.6;font-size:13px}
+
+.p1-data{display:grid;grid-template-columns:1fr 1fr;gap:14px}.p1-data-card{background:#0c1117;border:1px solid #293039;min-height:240px;padding:25px}.p1-data-card h3{margin:0 0 12px;font:900 28px Impact,Arial;text-transform:uppercase}.p1-empty{margin-top:35px;border-top:1px solid #2a3139;padding-top:18px;color:#808891;font-size:12px;line-height:1.6}.p1-empty b{color:#d9d4ca}
+
+.p1-join{background:linear-gradient(115deg,#0e1116 0%,#111922 60%,#0d2434 100%);border-bottom:5px solid var(--p1-blue)}
+.p1-join .wrap{padding:78px 0;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}.p1-join h2{margin:8px 0 10px;font:900 clamp(48px,7vw,86px)/.88 Impact,Arial;text-transform:uppercase}.p1-join p{max-width:690px;color:#b1bbc4;line-height:1.7}.p1-join-actions{display:flex;flex-direction:column;gap:10px;min-width:220px}
+
+@media(max-width:900px){.p1-hero-inner{grid-template-columns:1fr}.p1-next{max-width:620px}.p1-section-head,.p1-season-grid{grid-template-columns:1fr}.p1-principles{grid-template-columns:1fr 1fr}.p1-join .wrap{grid-template-columns:1fr}.p1-join-actions{flex-direction:row;flex-wrap:wrap}}
+@media(max-width:650px){.p1-hero{min-height:auto}.p1-hero-inner{padding:74px 0 44px}.p1-title{font-size:clamp(68px,24vw,104px)}.p1-title small{letter-spacing:.19em}.p1-principles,.p1-data{grid-template-columns:1fr}.p1-section{padding:62px 0}.p1-race-meta{grid-template-columns:1fr 1fr}.p1-next h2{font-size:32px}}
